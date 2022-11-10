@@ -1,0 +1,18 @@
+cadastro = []
+cadastro.append(input("Insira seu nome:"))
+
+cadastro.append(input("Insira seu sobrenome:"))
+
+cadastro.append(input("Insira sua renda:"))
+
+cadastro.append(input("Insira seu CPF::"))
+
+cadastro.append(input("Insira seu email:"))
+
+cadastro.append(input("Insira sua data de nascimento:"))
+
+cadastro.append(input("Insira sua idade:"))
+
+cadastro.append(input("Insira seu Numero:"))
+
+print("A, então seu nome é:",cadastro[0],"\n seu sobrenome é:",cadastro[1],"\n sua renda  é: ",cadastro[2], "\n portador do CPF:",cadastro[3], "\n email:",cadastro[4], "\n data de nascimento:",cadastro[5],"\n idade:",cadastro[6], "\n e numero telefone:",cadastro[7] )

@@ -1,0 +1,100 @@
+1)nota = float(input("Digite uma nota entre 0 e 10: "))
+while (nota < 0 or nota > 10):
+    nota = float(input("Valor inválido!!! Digite um numero de 0 e 10: "))
+
+2)nome=str(input("Informe seu nome:-> "))
+while ( len(nome) <=  3 ):
+	nome=str(input("Informe um nome:-> "))
+idade=int(input("informe a idade:-> "))
+while ( idade > 110 or idade < 0 ):
+	idade=int(input("Informe a idade:->"))
+salario=float(input("Informe um salário:-> "))
+while ( salario < 0 ):
+	salario=float(input("Informe um salário:-> "))
+sexo=str(input("Informe a inicial do seu sexo:-> "))
+while  sexo !="f" and sexo!="m" :
+	sexo=str(input("Informe a inicial do seu sexo:-> "))
+estado_civil=str(input("Informe a inicial do seu estado civil->"))
+while (estado_civil != "s" and estado_civil != "c" and estado_civil != "v" and estado_civil != "d" ):
+	estado_civil=str(input("informe a inicial do seu estado civil:->"))
+print(f"O nome digitado é: {nome}")
+print(f"A idade digitada é: {idade}")
+print(f"O salario é: {salario}")
+print(f"A inicial do seu sexo é: {sexo}")
+print (f"A inicial do seu estado civil é: {estado_civil}")
+
+3)a = int(input("Digite o primeiro valor:"))
+b = int(input("Digite o segundo valor:"))
+c = int(input("Digite o terceiro valor:"))
+d = int(input("Digite o quarto valor:"))
+e = int(input("Digite o quinto valor:"))
+
+maior = a
+if b > a and b > c:
+    maior = b
+if c > a and c > b:
+    maior = c
+if d > c and d > e:
+    maior = d
+if e > d and d > c:
+    maior = e
+print(f"O maior número digitado foi {maior}")
+
+4)eleitores = int(input("Digite o número total de eleitores: "))
+candidato1 = 0
+candidato2 = 0
+candidato3 = 0
+votantes = 0
+while (votantes < eleitores):
+	voto = int(input("Digite 1 para votar no candidato 1, 2 para o candidato 2 e 3 para o candidato 3:"))
+	if (voto == 1):
+		candidato1 = candidato1 + 1
+	elif (voto == 2):
+		candidato2 = candidato2 + 1
+	elif (voto == 3):
+		candidato3 = candidato3 + 1
+	votantes = votantes + 1
+print("O candidato 1 teve", candidato1, "votos.")
+print("O candidato 2 teve", candidato2, "votos.")
+print("O candidato 3 teve", candidato3, "votos.")
+
+5)print("\n <--Digite quantos números necessários e digite 0 para efetuar a soma do resultado: <--\n")
+condition = True
+
+soma= 0
+numero=[]
+
+while condition:
+    num=int(input('Digite um numero: '))
+
+    if num != 0:
+        soma += num
+        numero.append(num)
+    else:
+        break
+print("\n <-RESULTADO->")
+print('Soma: ', soma)
+print('Menor Valor: ', min(numero))
+print('Maior Valor: ', max(numero))
+
+6)numero = int(input('Digite um numero: '))
+maior = numero
+menor = numero
+while (numero < 0) | (numero > 1000):
+    print("\nSomente números entre 0 e 1000!\n")
+    numero = int(input('\nDigite um numero novamente: '))
+cc = str(input('Deseja continuar? S - Sim / N - Não  ')).upper()
+
+while cc not in 'N':
+    numero = int(input('Digite um numero: '))
+
+    if numero > maior:
+        maior = numero
+    if maior < menor:
+        menor = numero
+
+    cc = str(input('Deseja continuar? S - Sim / N - Não  ')).upper()
+soma = menor + maior
+print('\nO MAIOR número digitado foi {}.\n'.format(maior))
+print('O MENOR número digitado foi {}.\n'.format(menor))
+print('Soma entre meior e menor é {}.'.format(soma))

@@ -1,0 +1,71 @@
+1)tamanho = float(input('Tamanho do arquivo em mb: '))
+
+velocidade = float(input('Velocidade de net mbps: '))
+
+print('Tempo aproximado de download: %.0f Minutos ' %((tamanho / velocidade) * 60))
+
+
+2)print ("Olá Alfredo! Você possui 4 maças!")
+
+quantidade = int(input("Digite quantas maças você irá se desfazer:"))
+    
+if (quantidade == 1):
+    print ("Você ainda terá 3 maçãs, que é equivalene a 75% da sua quantidade inicial!")
+   
+elif (quantidade == 2):
+        print ("Você ainda terá 2 maçãs, que é equivalene a 50% da sua quantidade inicial!")
+
+elif (quantidade == 3):
+        print ("Você ainda terá 1 maçã, que é equivalene a 25% da sua quantidade inicial!")
+        
+
+
+3) val = int(input("Digite numeros de 1 a 7\n"))
+if(val == 1):
+    print("Domingo")
+elif(val == 2):
+    print("Segunda")
+elif(val == 3):
+    print("Terça")
+elif(val == 4):
+    print("Quarta")
+elif(val == 5):
+    print("Quinta")
+elif(val == 6):
+    print("Sexta")
+elif(val == 7):
+    print("Sabado")
+elif(val < 1) or (val > 7):
+    print("Valor Inválido")
+    
+4)res1 = int(input("Telefonou para a vítima? 1-para sim e 0-para não:"))
+res2 = int(input("Esteve no local do crime? 1-para sim e 0-para não:"))
+res3 = int(input("Mora perto da vítima? 1-para sim e 0-para não:"))
+res4 = int(input("Devia para a vítima? 1-para sim e 0-para não:"))
+res5 = int(input("Já trabalhou com a vítima? 1-para sim e 0-para não:"))
+soma = res1 + res2 + res3 + res4 + res5
+if (soma < 2):
+ print("\nInocente")
+elif (soma == 2):
+ print("\nSuspeita")
+elif (3 <= soma <= 4):
+ print("\nCúmplice")
+elif (soma == 5):
+ print("\nAssassino")
+
+5)litros = float(input("Digite quantos litros você quer abastecer: "))
+combustivel = input("Digite A para álcool ou G para gasolina: ")
+preco = 0
+if combustivel == "A" or combustivel == "a":
+    preco = litros * 1.9
+    if litros <= 20:
+        preco -= 1.9 * litros * 3 / 100
+    else:
+        preco -= 1.9 * litros * 5 / 100
+elif combustivel == "G" or combustivel == "g":
+    preco = litros * 2.5
+    if litros <= 20:
+        preco -= 2.5 * litros * 4 / 100
+    else:
+        preco -= 2.5 * litros * 6 / 100
+print(f"O preço a pagar é R${preco:.2f}")
